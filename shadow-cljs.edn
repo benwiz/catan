@@ -2,12 +2,12 @@
  :deps         {:aliases [:cljs]}
  :nrepl        {:port 9000}
  :builds       {:app {:target     :browser
-                      :output-dir "public/js/compiled"
+                      :output-dir "docs/js/compiled" ;; docs dir because that's the easiest way to deploy to github pages
                       :asset-path "/js/compiled"
                       :modules    {:main {:entries [catan-board.core]}}
 
                       :devtools {:before-load catan-board.core/stop
                                  :after-load  catan-board.core/start
-                                 :http-root   "public"
+                                 :http-root   "docs"
                                  :http-port   8700
                                  :preloads    [devtools.preload]}}}}

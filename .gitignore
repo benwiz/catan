@@ -1,5 +1,6 @@
 node_modules/
-public/js
+docs/js
+!docs/js/compiled/main.js
 
 /target
 /checkouts
