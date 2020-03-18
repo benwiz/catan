@@ -7,4 +7,4 @@
 (defn app
   []
   (prn "hi")
-  (d/div nil "hello, catan!!"))
+  (d/div nil "hello, catan!!!"))

@@ -20,4 +20,4 @@ Run `C-c C-x j s` which will start a shadow cljs repl based on the `.dir-local.e
 
 ## To Do
 
-- Use a hashed js filename on release to invalidate cache like in https://medium.com/multis/imagining-a-leaner-way-how-to-ship-a-highly-dynamic-webapp-as-a-static-website-5088f83c3813
+- Script should clean all main.XXX.js files that are not the current one
