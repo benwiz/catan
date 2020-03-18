@@ -1,5 +1,5 @@
 node_modules/
-docs/js
+docs/js/compiled/*
 !docs/js/compiled/main.js
 
 /target
