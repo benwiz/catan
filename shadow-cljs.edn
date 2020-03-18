@@ -1,0 +1,13 @@
+{:source-paths ["src"]
+ :deps         {:aliases [:cljs]}
+ :nrepl        {:port 9000}
+ :builds       {:app {:target     :browser
+                      :output-dir "public/js/compiled"
+                      :asset-path "/js/compiled"
+                      :modules    {:main {:entries [catan-board.core]}}
+
+                      :devtools {:before-load catan-board.core/stop
+                                 :after-load  catan-board.core/start
+                                 :http-root   "public"
+                                 :http-port   8700
+                                 :preloads    [devtools.preload]}}}}
