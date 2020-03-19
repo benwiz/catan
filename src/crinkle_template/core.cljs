@@ -1,16 +1,16 @@
-(ns catan-board.core
+(ns crinkle-template.core
   (:require
    ["react-dom" :refer [render]]
    ["react" :as react]
    [crinkle.component :refer [CE]]
-   [catan-board.board :as board]))
+   [crinkle-template.view :as view]))
 
 (enable-console-print!)
 
 (defn start
   []
   (render
-    (CE board/app nil)
+    (CE view/app nil)
     (.. js/document (getElementById "app"))))
 
 (defn ^:export init

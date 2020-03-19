@@ -1,4 +1,4 @@
-(ns catan-board.board
+(ns crinkle-template.view
   (:require
    ["react" :as react]
    [crinkle.dom :as d]
@@ -7,4 +7,4 @@
 (defn app
   []
   (prn "hi")
-  (d/div nil "hello, catan!!!"))
+  (d/div nil "this is a crinkle template (clojurescript react)"))
