@@ -1,4 +1,4 @@
-# catan-board
+# crinkle-template
 
 ## Develop
 
@@ -20,4 +20,6 @@ Run `C-c C-x j s` which will start a shadow cljs repl based on the `.dir-local.e
 
 ## To Do
 
-- Script should clean all main.XXX.js files that are not the current one
+- Deploy script should be called by npm script
+- Deploy script should clean all old main.XXX.js files that are not the current one
+- One time run script that updates the application name and namespaces then deletes (the script) itself
